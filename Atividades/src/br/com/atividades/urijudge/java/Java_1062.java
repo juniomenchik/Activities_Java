@@ -33,11 +33,11 @@ public class Java_1062 {
 			comparacao = scanner.nextLine();
 			for (String j = "0"; j.compareToIgnoreCase(comparacao) != 0; comparacao = scanner.nextLine()) {
 				if (comparacao.compareToIgnoreCase(crescente)==0) {
-					System.out.println("yes");
+					System.out.println("Yes");
 				} else
 					if(comparacao.compareToIgnoreCase(decrescente)==0){
-					System.out.println("yes");	
-					}else System.out.println("no");
+					System.out.println("Yes");	
+					}else System.out.println("No");
 				scanner.reset();
 			}
 			x.reset();
