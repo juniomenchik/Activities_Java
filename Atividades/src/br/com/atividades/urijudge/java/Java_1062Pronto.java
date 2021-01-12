@@ -11,7 +11,7 @@ import java.util.Stack;
  *
  * @author Brian Yeicol Restrepo Tangarife
  */
-public class URI1062Rails {
+public class Java_1062Pronto {
 
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(System.out);
