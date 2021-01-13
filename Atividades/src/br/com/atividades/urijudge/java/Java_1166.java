@@ -47,9 +47,6 @@ public class Java_1166 {
 			}
 			
 		}
-
-		System.out.println();
-
 		scanner.close();
 	}
 
