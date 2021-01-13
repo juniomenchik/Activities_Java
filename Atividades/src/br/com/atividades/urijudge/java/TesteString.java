@@ -1,5 +1,7 @@
 package br.com.atividades.urijudge.java;
 
+import java.util.Stack;
+
 /**
  * @author Jeff Menchik
  *
@@ -31,7 +33,14 @@ public class TesteString {
 //		
 //		
 //		System.out.println(a);
-
+		
+		
+		int numdepilhas = 5;
+		@SuppressWarnings("unchecked")
+		Stack<Integer> pilhas[] = new Stack[numdepilhas];
+		for (int i = 1; i < numdepilhas; i++) {
+			pilhas[i] = new Stack<>();
+		}
 		
 	}
 	
