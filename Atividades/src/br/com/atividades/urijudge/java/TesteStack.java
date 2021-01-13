@@ -6,13 +6,25 @@ public class TesteStack {
 
 	public static void main(String[] args) {
 		
-		Stack<Integer> stack = new Stack<>();
-		
-		String str = "Jeferson";
+		Stack<Integer> pilha1 = new Stack<>();
+	
 		int i = 1;
 		
-		stack.push(i);
+		pilha1.push(i);
 		
+		
+		System.out.println(pilha1.peek());
+		
+		i++;
+		
+		pilha1.push(i); 	// coloca no topo da pilha
+		
+		
+		System.out.println(pilha1.peek());
+		
+		
+		
+	
 		
 		
 	}
