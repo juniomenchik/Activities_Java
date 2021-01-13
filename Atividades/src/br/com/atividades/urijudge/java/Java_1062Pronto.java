@@ -29,14 +29,15 @@ public class Java_1062Pronto {
 				firstTest = false;
 			} else {
 				out.println();
-			}
-			while (!(l = in.readLine()).equals("0")) {
+			}																						
+			while (!(l = in.readLine()).equals("0")) {			
 				Stack<Integer> stack = new Stack<>();
 				coaches = l.split("\\s");
 				current = 0;
 				coach = Integer.parseInt(coaches[current]);
-				for (int i = 1; i <= N; i++) {
-					stack.push(i);
+				
+				for (int i = 1; i <= N; i++) {					//1 3 2 5 4 6 =
+					stack.push(i);								//>1 2   // stack		
 
 					while (!stack.isEmpty() && coach == stack.lastElement()) {
 						if (++current < N) {
@@ -45,6 +46,7 @@ public class Java_1062Pronto {
 						stack.pop();
 					}
 				}
+				
 				out.println(stack.isEmpty() ? "Yes" : "No");
 			}
 		}
