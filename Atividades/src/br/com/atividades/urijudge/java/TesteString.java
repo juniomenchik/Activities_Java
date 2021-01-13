@@ -8,10 +8,10 @@ public class TesteString {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Testando Metodos da classe String.");
-		
-		String nome = "Jeferson";
-		String dale = "Jeferson";
+//		System.out.println("Testando Metodos da classe String.");
+//		
+//		String nome = "Jeferson";
+//		String dale = "Jeferson";
 //		System.out.println("String nome : " + nome );
 //		System.out.println("Testando .charAt(5)   =  " + nome.charAt(5));
 //		
@@ -23,7 +23,15 @@ public class TesteString {
 //		
 //		System.out.println("Testando nome.length() =    " + nome.length());
 //		
-		System.out.println(nome.compareToIgnoreCase(dale));
+//		System.out.println(nome.compareToIgnoreCase(dale));
+//		
+//		int A = 63;
+//		String a = "";
+//		a = Integer.toString(A);
+//		
+//		
+//		System.out.println(a);
+
 		
 	}
 	
