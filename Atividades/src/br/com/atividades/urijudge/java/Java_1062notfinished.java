@@ -2,7 +2,7 @@ package br.com.atividades.urijudge.java;
 
 import java.util.Scanner;
 
-public class Java_1062 {
+public class Java_1062notfinished {
 
 	public static void main(String[] args) {
 		int entradalac;
