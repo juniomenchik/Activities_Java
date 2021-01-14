@@ -34,14 +34,12 @@ public class TesteString {
 //		
 //		System.out.println(a);
 		
+		String str = "a - zb";
+		char [] a = str.toCharArray();
 		
-		int numdepilhas = 5;
-		@SuppressWarnings("unchecked")
-		Stack<Integer> pilhas[] = new Stack[numdepilhas];
-		for (int i = 1; i < numdepilhas; i++) {
-			pilhas[i] = new Stack<>();
-		}
-		
+		System.out.println((int)a[0]);
+		System.out.println((int)a[4]);
+		System.out.println((int)a[5]);
 	}
 	
 }
