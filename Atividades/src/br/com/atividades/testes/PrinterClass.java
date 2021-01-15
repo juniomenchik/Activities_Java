@@ -1,4 +1,4 @@
-package br.com.atividades.urijudge.java; 
+package br.com.atividades.testes; 
 
 import java.io.BufferedReader;
 import java.io.IOException;

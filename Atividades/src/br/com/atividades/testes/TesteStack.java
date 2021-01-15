@@ -1,4 +1,4 @@
-package br.com.atividades.urijudge.java;
+package br.com.atividades.testes;
 
 import java.util.Scanner;
 import java.util.Stack;
