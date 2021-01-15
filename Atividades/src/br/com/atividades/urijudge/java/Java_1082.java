@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.TreeSet;
 
-public class Main {
+public class Java_1082 {
 
     static BufferedReader leitura = new BufferedReader(new InputStreamReader(System.in));
 
