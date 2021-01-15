@@ -1,4 +1,4 @@
-package br.com.atividades.testes;
+package br.com.atividades.urijudge.java;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,13 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Stack;
 
-/**
- * See
- * <a href="https://www.urionlinejudge.com.br/judge/en/problems/view/1063">Rails
- * Again... Tracing Movements</a>
- *
- * @author Brian Yeicol Restrepo Tangarife
- */
+
 public class Java_1063 {
 
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
