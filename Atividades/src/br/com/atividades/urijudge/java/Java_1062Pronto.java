@@ -17,37 +17,41 @@ public class Java_1062Pronto {
     static PrintWriter out = new PrintWriter(System.out);
 
 	public static void main(String[] args) throws IOException {
-		String l;
-		String[] coaches;
-		int N, current, coach;
-		boolean firstTest = true;
+		String numVagoes;
+		String[] vagoes;
+		int N;
+		int vagaoAtual; 
+		int vagao;
+		boolean primeiroTeste = true;
 		
-		while (!(l = in.readLine()).equals("0")) {
+		while (!(numVagoes = in.readLine()).equals("0")) {
 			
-			N = Integer.parseInt(l);
-			if (firstTest) {
-				firstTest = false;
+			N = Integer.parseInt(numVagoes);
+			if (primeiroTeste) {
+				primeiroTeste = false;
 			} else {
 				out.println();
 			}																						
-			while (!(l = in.readLine()).equals("0")) {			
-				Stack<Integer> stack = new Stack<>();
-				coaches = l.split("\\s");
-				current = 0;
-				coach = Integer.parseInt(coaches[current]);
+			while (!(numVagoes = in.readLine()).equals("0")) {			
+				Stack<Integer> vagoesAsair = new Stack<>();
+				vagoes = numVagoes.split("\\s");
+				vagaoAtual = 0;
+				vagao = Integer.parseInt(vagoes[vagaoAtual]);
 				
 				for (int i = 1; i <= N; i++) {					//1 3 2 5 4 6 =
-					stack.push(i);								//>1 2   // stack		
+					vagoesAsair.push(i);								//>1 2   // stack		
 
-					while (!stack.isEmpty() && coach == stack.lastElement()) {
-						if (++current < N) {
-							coach = Integer.parseInt(coaches[current]);
+					while (!vagoesAsair.isEmpty() && vagao == vagoesAsair.lastElement()) {
+						if (++vagaoAtual < N) {
+							vagao = Integer.parseInt(vagoes[vagaoAtual]);
 						}
-						stack.pop();
+						vagoesAsair.pop();
 					}
 				}
 				
-				out.println(stack.isEmpty() ? "Yes" : "No");
+				if(vagoesAsair.isEmpty()){
+					out.println("Yes");
+				}else out.println("No");
 			}
 		}
 		out.println();

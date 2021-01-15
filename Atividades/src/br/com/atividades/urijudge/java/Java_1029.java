@@ -8,6 +8,7 @@ public class Java_1029 {
 
 		Scanner input = new Scanner(System.in);
 		int testes = input.nextInt();
+		input.close();
 		for (; testes > 0; testes--) {
 			int fibSeqTotal = 0;
 			int fibSeqOne = 0;
@@ -28,7 +29,7 @@ public class Java_1029 {
 				}
 			System.out.println("fib("+fibSeqContador+") = "+fibSeqTotal+" calls = "+fibTotal);
 		}
-
+		
 	}
 
 }
