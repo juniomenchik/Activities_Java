@@ -7,52 +7,47 @@ import java.util.TreeSet;
 
 public class Java_1082 {
 
-    static BufferedReader leitura = new BufferedReader(new InputStreamReader(System.in));
+    static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        int numeroCaso = 1, numeroVezes = lerInteiro(), primeiro, segundo, s, d, conexoes;
-        int[] arrayUsuario;
-        int[][] matrizChar;
+        int numCasos = 1, numVezes = Integer.parseInt(input.readLine()), prim, seg, x, y, conex;
+        int[] arrayInteiros;
+        int[][] charMatriz;
         String texto;
-        while (numeroVezes-- > 0) {
-            arrayUsuario = lerArray();
-            primeiro = arrayUsuario[0];
-            segundo = arrayUsuario[1];
-            matrizChar = new int[primeiro][primeiro];
-            while (segundo-- > 0) {
-                texto = leitura.readLine();
-                s = (int) texto.charAt(0) - 97;
-                d = (int) texto.charAt(2) - 97;
-                matrizChar[s][d] = 1;
-                matrizChar[d][s] = 1;
+        while (numVezes-- > 0) {
+            arrayInteiros = lerArray();
+            prim = arrayInteiros[0];
+            seg = arrayInteiros[1];
+            charMatriz = new int[prim][prim];
+            while (seg-- > 0) {
+                texto = input.readLine();
+                x = (int) texto.charAt(0) - 97;
+                y = (int) texto.charAt(2) - 97;
+                charMatriz[x][y] = 1;
+                charMatriz[y][x] = 1;
             }
-            conexoes = 0;
-            System.out.printf("Case #%d:\n", numeroCaso++);
-            for (int i = 0; i < primeiro; i++) {
+            conex = 0;
+            System.out.printf("Case #%d:\n", numCasos++);
+            for (int i = 0; i < prim; i++) {
                 TreeSet<Integer> treeSet = new TreeSet<>(); //set para ordenar os elementos adicionados
                 treeSet.add(i);
-                treeSet = getConexoes(treeSet, matrizChar, i, 0);
+                treeSet = getConexoes(treeSet, charMatriz, i, 0);
                 if (!treeSet.isEmpty()) {
-                    conexoes++;
+                    conex++;
                     for (Integer next : treeSet) {
                         System.out.print((char) (next + 97) + ",");
                     }
                     System.out.println();
                 }
             }
-            System.out.printf("%d connected components\n", conexoes);
+            System.out.printf("%d connected components\n", conex);
             System.out.println();
         }
         System.out.close();
     }
 
-
-    private static int lerInteiro() throws IOException { // trasnformar a string em inteiro
-        return Integer.parseInt(leitura.readLine());
-    }
-
     private static int[] lerArray() throws IOException { //separar os chars da string 
-        String[] line = leitura.readLine().split("\\s");
+        String[] line = input.readLine().split("\\s");
         int l = line.length;
         int[] a = new int[l];
         for (int i = 0; i < l; i++) {
