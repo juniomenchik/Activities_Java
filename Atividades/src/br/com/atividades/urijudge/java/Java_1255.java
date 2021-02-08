@@ -36,5 +36,6 @@ public class Java_1255{
 			
 			System.out.println(resultado);
 		}
+		scanner.close();
 	}
 }
