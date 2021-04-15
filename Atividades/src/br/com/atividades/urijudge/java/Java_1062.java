@@ -5,13 +5,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Stack;
 
-/**
- * See
- * <a href="https://www.urionlinejudge.com.br/judge/en/problems/view/1062">Rails</a>
- *
- * @author Brian Yeicol Restrepo Tangarife
- */
-public class Java_1062Pronto {
+public class Java_1062 {
 
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter out = new PrintWriter(System.out);
